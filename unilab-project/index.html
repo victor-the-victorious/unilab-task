@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./JS/index.js" defer></script>
+    <title>Tourist Landing Page</title>
+  </head>
+
+  <body>
+    <nav>
+      <img src="./assets/logo.png" alt="logo" />
+      <ul id="navBar">
+        <li id="closeMenu">
+          <i class="fa-solid fa-xmark" onclick="toggleNavbar()"></i>
+        </li>
+        <li>home</li>
+        <li>about us</li>
+        <li>our services</li>
+        <li><a href="api.html" target="_blank">Tour packages (api)</a></li>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="toggleNavbar()"></i>
+    </nav>
+
+    <div class="slideshow-container">
+      <div class="mySlides" id="slide1">
+        <div class="price">
+          <h4>From $199/Person</h4>
+          <img src="./assets/slides/Layer2.png" alt="" />
+        </div>
+        <h2>Discover Greece</h2>
+        <p>TRAVEL WITH UNIQUE EXPERIENCE</p>
+        <img class="mySlide" src="./assets/slides/happyperson.png" />
+      </div>
+      <div class="mySlides">
+        <img class="mySlide" src="./assets/slides/happyperson1.png" />
+      </div>
+      <div class="mySlides">
+        <img class="mySlide" src="./assets/slides/happyperson2.png" />
+      </div>
+      <div class="mySlides">
+        <img class="mySlide" src="./assets/slides/happyperson3.png" />
+      </div>
+      <div class="mySlides">
+        <img class="mySlide" src="./assets/slides/happyperson4.png" />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)"
+        ><i class="fa-solid fa-arrow-left"></i
+      ></a>
+      <a class="next" onclick="plusSlides(1)"
+        ><i class="fa-solid fa-arrow-right"></i
+      ></a>
+    </div>
+
+    <section id="ourServices">
+      <div id="discover">
+        <h3>discover</h3>
+        <h2>our hot services</h2>
+        <img src="./assets/wiggly.png" alt="wiggly" />
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
+          deleniti harum ullam! Obcaecati, ut iste provident culpa nesciunt
+          error hic!
+        </p>
+      </div>
+      <div id="services"></div>
+    </section>
+
+    <section id="videoTour">
+      <div id="tourTitle">
+        <h3>discover</h3>
+        <h2>watch out video tour</h2>
+        <img src="./assets/wiggly.png" alt="wiggly" />
+      </div>
+      <iframe
+        width="800"
+        height="400"
+        src="https://www.youtube.com/embed/0HkUi5Xqe3I"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <section id="achievements">
+      <div>
+        <img src="./assets/achievements/achi1.png" alt="star" />
+        <h2>120 859</h2>
+        <p>HAPPY TRAVELERS</p>
+      </div>
+      <div>
+        <img src="./assets/achievements/achi2.png" alt="piramid" />
+        <h2>2594</h2>
+        <p>SATISFIED TOURS</p>
+      </div>
+      <div>
+        <img src="./assets/achievements/achi3.png" alt="globe" />
+        <h2>854</h2>
+        <p>DESTINATION</p>
+      </div>
+      <div>
+        <img src="./assets/achievements/achi4.png" alt="city" />
+        <h2>978</h2>
+        <p>HOTELS $ RESORTS</p>
+      </div>
+    </section>
+
+    <section id="featured">
+      <div id="featuredTitle">
+        <h3>we offer</h3>
+        <h2>Featured tour packages</h2>
+        <img src="./assets/wiggly.png" alt="wiggly" />
+      </div>
+      <div id="tourPackages">
+        <div class="tourPackage">
+          <span class="bagde">honeymoon</span>
+          <img src="./assets/featured/greece.png" alt="" />
+          <div class="packageInfo">
+            <p>$299/person</p>
+            <h2>Blue Beauty of Greece</h2>
+            <h3>5 Days / 6 Nights</h3>
+          </div>
+        </div>
+        <div class="tourPackage">
+          <span class="bagde">holiday</span>
+          <img src="./assets/featured/paradise.png" alt="" />
+          <div class="packageInfo">
+            <p>$178/person</p>
+            <h2>Nature of Phuket</h2>
+            <h3>3 Days / 4 Nights</h3>
+          </div>
+        </div>
+        <div class="tourPackage">
+          <span class="bagde">holiday</span>
+          <img src="./assets/featured/paris.png" alt="" />
+          <div class="packageInfo">
+            <p>$1111/person</p>
+            <h2>Tour of Paris</h2>
+            <h3>7 Days / 8 Nights</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="discount">
+      <h2>Get 10% Off on Your Next Travel</h2>
+      <h4>Maximum discout is 1000$ per person</h4>
+      <div id="input">
+        <input type="text" placeholder="Enter your email" />
+        <button>SUBSCRIBE</button>
+      </div>
+    </section>
+
+    <section id="happyTravelers">
+      <div id="travelersTitle">
+        <h3>OUR SMILES</h3>
+        <h2>Happy Travelers</h2>
+        <img src="./assets/wiggly.png" alt="wiggly" />
+      </div>
+      <div id="travelers">
+        <div class="traveler">
+          <div class="image-frame">
+            <img src="./assets/Clients/guy1.png" alt="" />
+          </div>
+          <h2 class="travelerName">Ribeca Singh</h2>
+          <p class="travelerQuote">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+            voluptatum, distinctio illum eveniet ut assumenda accusantium
+            consequatur ratione quos provident?
+          </p>
+          <i class="fa-solid fa-quote-right"></i>
+        </div>
+        <div class="traveler">
+          <div class="image-frame">
+            <img src="./assets/Clients/guy2.png" alt="" />
+          </div>
+          <h2 class="travelerName">Jimmy dean</h2>
+          <p class="travelerQuote">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+            voluptatum, distinctio illum eveniet ut assumenda accusantium
+            consequatur ratione quos provident?
+          </p>
+          <i class="fa-solid fa-quote-right"></i>
+        </div>
+        <div class="traveler">
+          <div class="image-frame">
+            <img src="./assets/Clients/guy3.png" alt="" />
+          </div>
+          <h2 class="travelerName">Theodule Terer</h2>
+          <p class="travelerQuote">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+            voluptatum, distinctio illum eveniet ut assumenda accusantium
+            consequatur ratione quos provident?
+          </p>
+          <i class="fa-solid fa-quote-right"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="ready">
+      <h2>Ready to plan your trip?</h2>
+      <button>BOOK NOW</button>
+    </section>
+
+    <section id="popularCountry">
+      <div id="countryTitle">
+        <h3>DESTINATION</h3>
+        <h2>Popular Tourism Countries</h2>
+        <img src="./assets/wiggly.png" alt="wiggly" />
+      </div>
+      <div id="countries">
+        <div class="country">
+          <img src="./assets/destinations/bigrock.png" alt="" />
+          <h2>Thailand</h2>
+          <p>$900 - $1900</p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div class="country">
+          <img src="./assets/destinations/bigtower.png" alt="" />
+          <h2>Italy</h2>
+          <p>$700 - $2000</p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div class="country">
+          <img src="./assets/destinations/bigtower2.png" alt="" />
+          <h2>Indonesia</h2>
+          <p>$300 - $1100</p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div class="country">
+          <img src="./assets/destinations/bigruin.png" alt="" />
+          <h2>Singapore</h2>
+          <p>$1900 - $2700</p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+    </section>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1563.3111879104224!2d-87.92395839257935!3d44.5332550553772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8802e8a7c584949f%3A0xb91e28da68358b0f!2s2420%20Nicolet%20Dr%2C%20Green%20Bay%2C%20WI%2054311%2C%20USA!5e1!3m2!1sen!2sge!4v1668779098204!5m2!1sen!2sge"
+      width="100%"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <footer>
+      <div class="footer-content-wrapper">
+        <div class="footer-columns-wrapper">
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Company</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Infrastructure</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Get Started</a></li>
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Ipsum</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">14, 1 Ellis bridge ST, </a></li>
+              <li>
+                <a href="#">auckland 3500, Australia</a>
+              </li>
+              <li><a href="#">+1234567890 </a></li>
+              <li><a href="#">contactus@demo.com</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-subscribe">
+          <p class="footer-subscribe-title">Subscribe to our newsletter</p>
+
+          <label class="subscribe-container">
+            <input
+              class="newsletter-input"
+              placeholder="Your email"
+              type="email"
+            />
+
+            <div class="subscribe-icon-wrapper"></div>
+          </label>
+        </div>
+      </div>
+      <p class="copy">tourism©All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
